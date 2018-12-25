@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "electron": "electron ."
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "homepage": "https://github.com/general-ice/notice-bag#readme",
   "dependencies": {
     "electron": "^3.0.10"
+  },
+  "devDependencies": {
+    "electron-builder": "^20.38.4"
   }
 }
