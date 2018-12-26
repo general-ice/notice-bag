@@ -1,4 +1,5 @@
 const {app, BrowserWindow} = require('electron');
+const {Api} = require('./src/api/base.es');
 
 const defaultWindowsProperties = {
     height: 300,
@@ -15,6 +16,10 @@ function main() {
         width
     });
 
+    console.log(Api);
+
+    Api.get('http://google.com/img.png');
+
     appWindows.mainPage.loadFile(`${__dirname}/views/mainPage.html`);
 
     appWindows.mainPage.on('closed', () => {
@@ -26,4 +31,4 @@ app.on('ready', main);
 
 app.on('window-all-closed', () => {
     app.quit();
-})
+});

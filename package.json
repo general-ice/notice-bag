@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/general-ice/notice-bag#readme",
   "dependencies": {
-    "electron": "^3.0.10"
+    "electron": "^3.0.10",
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "electron-builder": "^20.38.4"
